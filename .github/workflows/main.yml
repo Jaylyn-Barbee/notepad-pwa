@@ -26,7 +26,7 @@ jobs:
         # run: npm run build -- --base=${{ github.event.repository.name }}
 
       - name: List output directory
-        run: ls -l /dist
+        run: ls -l ./dist
 
       - name: GitHub Pages action
         uses: peaceiris/actions-gh-pages@v3.7.3
