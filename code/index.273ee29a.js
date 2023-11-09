@@ -429,7 +429,7 @@
     }
     `}disconnectedCallback(){b.instance.removeListener(M.fileChanged,this.onFileChangedHandler),b.instance.removeListener(M.editorChanged,this.onFileChangedHandler)}firstUpdated(t){this.updateTitle()}updateTitle(){this.title=b.instance.fileName||"Untitled",this.edited=b.instance.isDirty,document.title=this.title}render(){return Bt`
       <div class="root">
-        <img src="/assets/icons/Square44x44Logo.scale-100.png" alt="Notepad logo" />
+        <img src="/notepad-pwa/assets/icons/Square44x44Logo.scale-100.png" alt="Notepad logo" />
         <label>
           ${this.edited?"*":""}${this.title} - Notepad
         </label>
@@ -1526,7 +1526,7 @@
       <div class="root">
 
       </div>
-    `}};qo=ys([jt("app-status-bar")],qo);var ws=Object.defineProperty,_s=Object.getOwnPropertyDescriptor,Ci=(t,e,o,i)=>{for(var r=i>1?void 0:i?_s(e,o):e,s=t.length-1,n;s>=0;s--)(n=t[s])&&(r=(i?n(e,o,r):n(r))||r);return i&&r&&ws(e,o,r),r};let $s="/shoelace";Oe($s);let je=class extends W{constructor(){super(),"launchQueue"in window?window.launchQueue.setConsumer(t=>{if(!!t.files.length)for(const e of t.files)b.instance.setFileHandle(e)}):console.error("File Handling API is not supported!"),document.addEventListener("keydown",t=>{t.ctrlKey&&t.key==="s"&&(t.preventDefault(),b.instance.saveFile())}),window.addEventListener("beforeunload",t=>{if(b.instance.isDirty){const e=`Do you want to save changes to ${b.instance.fileName||"Untitled"}`;return t.returnValue=e,e}}),b.instance.on(M.decideOnChanges,t=>this.showDialog(t))}static get styles(){return It`
+    `}};qo=ys([jt("app-status-bar")],qo);var ws=Object.defineProperty,_s=Object.getOwnPropertyDescriptor,Ci=(t,e,o,i)=>{for(var r=i>1?void 0:i?_s(e,o):e,s=t.length-1,n;s>=0;s--)(n=t[s])&&(r=(i?n(e,o,r):n(r))||r);return i&&r&&ws(e,o,r),r};let $s="/notepad-pwa/shoelace";Oe($s);let je=class extends W{constructor(){super(),"launchQueue"in window?window.launchQueue.setConsumer(t=>{if(!!t.files.length)for(const e of t.files)b.instance.setFileHandle(e)}):console.error("File Handling API is not supported!"),document.addEventListener("keydown",t=>{t.ctrlKey&&t.key==="s"&&(t.preventDefault(),b.instance.saveFile())}),window.addEventListener("beforeunload",t=>{if(b.instance.isDirty){const e=`Do you want to save changes to ${b.instance.fileName||"Untitled"}`;return t.returnValue=e,e}}),b.instance.on(M.decideOnChanges,t=>this.showDialog(t))}static get styles(){return It`
       .root {
         display: flex;
         flex-direction: column;
@@ -1578,4 +1578,4 @@
         </sl-dialog>
       </div>
     `}};Ci([Qo(".dialog",!0)],je.prototype,"dialog",2);je=Ci([jt("app-index")],je);
-//# sourceMappingURL=index.b2ca6502.js.map
+//# sourceMappingURL=index.273ee29a.js.map
