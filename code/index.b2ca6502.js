@@ -1456,7 +1456,7 @@
       <div class="root">
         <div class="menubar">
           <sl-dropdown>
-            <sl-button slot="trigger">File</sl-button>
+            <sl-button slot="trigger">Jaylyn</sl-button>
             <sl-menu @sl-select=${t=>this.menuItemClicked(t.detail.item.value)}>
               <sl-menu-item value="new">New</sl-menu-item>
               <sl-menu-item value="new-window">New window</sl-menu-item>
@@ -1578,4 +1578,4 @@
         </sl-dialog>
       </div>
     `}};Ci([Qo(".dialog",!0)],je.prototype,"dialog",2);je=Ci([jt("app-index")],je);
-//# sourceMappingURL=index.cbbb632c.js.map
+//# sourceMappingURL=index.b2ca6502.js.map
