@@ -5,7 +5,7 @@ import { normalizePath } from 'vite'
 
 // https://vitejs.dev/config/
 export default {
-  base: "./",
+  base: "/notepad-pwa/",
   build: {
     sourcemap: true,
     assetsDir: "code"
