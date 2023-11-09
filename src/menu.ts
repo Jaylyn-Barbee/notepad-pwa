@@ -87,7 +87,7 @@ export class AppMenu extends LitElement {
       <div class="root">
         <div class="menubar">
           <sl-dropdown>
-            <sl-button slot="trigger">File</sl-button>
+            <sl-button slot="trigger">Jaylyn</sl-button>
             <sl-menu @sl-select=${(e: any) => this.menuItemClicked(e.detail.item.value)}>
               <sl-menu-item value="new">New</sl-menu-item>
               <sl-menu-item value="new-window">New window</sl-menu-item>
