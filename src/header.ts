@@ -72,7 +72,7 @@ export class AppHeader extends LitElement {
   render() {
     return html`
       <div class="root">
-        <img src="/assets/icons/Square44x44Logo.scale-100.png" alt="Notepad logo" />
+        <img src="/notepad-pwa/assets/icons/Square44x44Logo.scale-100.png" alt="Notepad logo" />
         <label>
           ${this.edited ? "*" : ""}${this.title} - Notepad
         </label>

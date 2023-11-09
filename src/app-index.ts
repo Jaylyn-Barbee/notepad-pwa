@@ -18,7 +18,7 @@ declare global {
 }
 
 
-let rootUrl = `/shoelace`
+let rootUrl = `/notepad-pwa/shoelace`
 setBasePath(rootUrl)
 
 @customElement('app-index')
